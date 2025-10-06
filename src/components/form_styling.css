@@ -1,0 +1,104 @@
+section .column form{
+	background-color: white;
+	box-shadow: 1px 8px 1px rgb(83, 80, 98, 0.5) ;
+	height: 455px;
+}
+
+section .column #form-controls {
+	padding: 20px 20px;
+}
+
+section .column form #form-controls input[type=text] {
+	height: 45px;
+	width: 100%;		
+	display: block;
+	font-weight: 700;	
+	padding-left: 25px;
+	box-sizing:border-box;
+}
+
+section .column form #form-controls input::placeholder{
+	font-weight: 700;	
+}
+
+section .column form #form-controls input[type=text]:focus {
+	outline-color: hsl(248, 25%, 70%);
+}
+
+section .column #form-controls input[type=submit] {
+	background-color: hsl(154, 59%, 51%);
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-transform: uppercase;
+	font-weight: 600;
+	box-shadow: 1px 4px 2px hsl(154, 59%, 35%); 
+	cursor: pointer;
+	border: none;
+}
+
+/* error icon */
+section .column #form-controls img {
+	float: right;
+    padding-right: 25px;
+    margin-top: -35px;
+}
+
+section .column #form-controls p {
+	position: relative;
+	float: right;
+	color: hsl(0, 100%, 74%);
+	font-size: 10px;
+	font-weight: 600;
+	bottom: 10px;
+}
+
+section .column form p#agree-messge {
+	font-size: 9px;
+    padding: 0 37px;
+    position: static;
+    margin-top: -5px;
+    color: hsl(246, 25%, 77%);
+    text-align: center;
+    line-height: 18px;
+}
+
+section .column form p#agree-messge strong {
+	color: hsl(0, 100%, 74%);
+}
+
+/* styling to be used with javascript */
+/* border color for input type text. cannot have this directly 
+	for input control, due to javascript submit, cannot override css
+	that is	right in the control */
+.input-border {
+	border: 1px solid hsl(247, 25%, 80%);
+	color: hsl(249, 10%, 26%) ;
+}
+
+/*input text control on error */
+.error-border {
+	border: 2px solid hsl(0, 100%, 74%);
+	color: hsl(0, 100%, 74%);
+}
+
+/*input text control on success */
+.success {
+	border: 2px solid hsl(154, 59%, 51%);
+	color: hsl(154, 59%, 51%);
+}
+
+.icon {
+	visibility: hidden;
+}
+.error-message {
+	visibility: hidden;
+}
+
+@media only screen and (min-width : 1150px) { 
+    section .column #form-controls {
+		padding-top: 30px; 
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
