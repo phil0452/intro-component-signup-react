@@ -1,0 +1,96 @@
+html,
+body{
+	height: 100%;
+	margin: 0;
+	font-family: 'Poppins';
+	font-size: 16px;
+}
+
+body{
+	background-image: url('./images/bg-intro-mobile.png');
+	background-color: hsl(0, 100%, 74%);
+}
+
+.whitetext {
+	color: white;
+}
+
+section{
+	margin-top: 70px;
+}
+
+section .column{
+	padding: 15px 25px;
+}
+section .column #description {
+    text-align: center;
+}
+
+section .column #description h1{	
+	font-weight: 700;
+    font-size: 33px;
+    line-height: 40px;
+    color: white;
+}
+
+section .column #description p{
+	line-height: 25px;
+    color: hsl(0, 2%, 88%);
+}
+
+section .column #trial-offer {
+	background-color: hsl(248, 32%, 49%);
+	padding: 5px 49px;
+	text-align: center;
+	font-size: 14px;
+	margin-bottom: 25px;
+	box-shadow: 1px 8px 1px rgb(83, 80, 98, 0.5) ;
+}
+
+section .column #form-column .corners{
+	border-radius: 7px;
+}
+
+
+
+@media only screen and (min-width : 768px) { 
+	section .column {
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+}
+
+@media only screen and (min-width : 1024px) { 
+	section .column {
+		padding-left: 90px;
+		padding-right: 90px;
+	}
+}
+
+@media only screen and (min-width : 1150px) { 
+	body{
+		background-image: url('./images/bg-intro-desktop.png');
+	}
+
+	section {
+		display: flex;
+		width: 1100px;
+		margin: auto;
+		padding-top: 100px;
+	}
+	
+	section .column {
+		padding: 0;
+		flex: 50%;
+	}
+	
+	section #title {
+		align-self: center;
+	}
+	
+	section .column #description {
+		text-align: left;
+	}
+
+	
+}
