@@ -29,7 +29,6 @@ function Form() {
 
     function Validate(e) {
         e.preventDefault();
-        alert(lastName);
 
         //each form that is valid
         //	-	green input with green border
@@ -125,5 +124,6 @@ function Form() {
     </>
   );
 }
+
 
 export default Form;
